@@ -81,16 +81,18 @@ __version__ = version.__version__
 
 
 warnings.warn(
-    textwrap.dedent("""
+    textwrap.dedent(
+        """
 
-    All support for the `google.generativeai` package has ended. It will no longer be receiving 
-    updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
-    See README for more details:
-    
-    https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
-    """),
+        All support for the `google.generativeai` package has ended. It will no longer be receiving 
+        updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+        See README for more details:
+
+        https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+        """
+    ),
     FutureWarning,
-    stacklevel=2
+    stacklevel=2,
 )
 
 
